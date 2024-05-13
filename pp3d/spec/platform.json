@@ -1,0 +1,10 @@
+{
+  "objects": [],
+  "connections": {},
+  "settings": {
+    "arch": "ObjectProperty [value: ARM]",
+    "simMode": "ObjectProperty [value: SE - Syscall emulation]",
+    "workloads": [],
+    "diskImages": []
+  }
+}

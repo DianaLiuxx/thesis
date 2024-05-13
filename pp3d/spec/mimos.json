@@ -1,0 +1,69 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "636f1c9e-3b2d-4a9e-bdce-96c879efaeb5",
+		"name": "Node_1",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "Node_1.java",
+		"y": 203,
+		"x": 167,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "ceb3f919-0e7a-456b-a81e-3774dc816ca6",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "c7918171-49d3-4b96-8148-b3b3cc173bb4",
+		"name": "A_Star_3D",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "A_Star_3D.java",
+		"y": 324,
+		"x": 168,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "5b5d13f9-cee5-4d24-a153-1b425c0c92dd",
+			"name": "input1",
+			"type": "double[<=3]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "cd5d5926-d6f4-48f3-93cd-43fa9df1d7bc",
+		"senderPortId": "ceb3f919-0e7a-456b-a81e-3774dc816ca6",
+		"receiverPortId": "5b5d13f9-cee5-4d24-a153-1b425c0c92dd",
+		"startNode": "Node_1",
+		"startPort": "output1",
+		"endNode": "A_Star_3D",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	}
+	],
+
+	"simLength": 10
+}

@@ -1,0 +1,27 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "6dcfc8e1-f0ef-465e-8501-cbaf02ea3c53",
+		"name": "Sym_Planner",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "Sym_Planner.java",
+		"y": 304,
+		"x": 201,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	],
+
+	"simLength": 10
+}

@@ -1,0 +1,303 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "08a10842-23de-4294-939f-baae734e1f2f",
+		"name": "Particles_Initializer",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Particles_Initializer.java",
+		"y": 165,
+		"x": 277,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "0976cd56-a55a-4453-9f64-ea2238f56931",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "5c39cc3a-9e73-48fe-86fe-3ee242e78aa3",
+		"name": "Input_Selector",
+		"period": 5,
+		"deadline": 5,
+		"isDisplayNode": false,
+		"file": "Input_Selector.java",
+		"y": 260,
+		"x": 202,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "6feda2a4-ecf2-4d95-8bac-1341e0afcecb",
+			"name": "input1",
+			"type": "double[<=2000]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "8bb94253-21da-4d26-846e-a5f95c22c3ae",
+			"name": "input2",
+			"type": "double[<=2000]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "68d2bc77-75ba-47a1-911c-9b190e1ae473",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "75b950f4-d12f-47e0-8179-9b3ed0169cca",
+		"name": "Resample",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Resample.java",
+		"y": 682,
+		"x": 199,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "a6d915b2-56e4-447a-b8ba-d79774fe813b",
+			"name": "input1",
+			"type": "double[2000]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "64eed3c2-601b-4ba1-bd83-a81401fae8c0",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "2f502c05-7227-4181-bd1e-17d1236994d1",
+		"name": "Odometer",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "Odometer.java",
+		"y": 327,
+		"x": 278,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "be35590b-1eec-4c44-bfeb-9cd63f1da934",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "ebdb25c8-f66d-4896-81ba-5b770f170ef9",
+		"name": "Update_Motion",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Update_Motion.java",
+		"y": 422,
+		"x": 201,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "1bf96382-2811-4435-8ab8-178a933c1abb",
+			"name": "input2",
+			"type": "double[2000]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "f938cea9-372c-4ca8-b490-3003d5ac1505",
+			"name": "input1",
+			"type": "double[3]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "0faeb38b-d7a2-41bd-9b1b-8171ddaf05c6",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "f979b1c3-e30d-4ead-b0a8-f2737c3a0d6c",
+		"name": "Laser_Rangefinder",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "Laser_Rangefinder.java",
+		"y": 484,
+		"x": 275,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "bd975717-1117-43f7-a9ec-298b4c8788f7",
+			"name": "output1",
+			"type": "float[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "754b113b-a86c-4804-89e5-42bd8401e7e1",
+		"name": "Update_Sensor",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Update_Sensor.java",
+		"y": 579,
+		"x": 199,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "0cda493e-4fe6-4cb9-8d72-ca1d23efd862",
+			"name": "input2",
+			"type": "double[2000]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "d14adc8e-c4c3-4052-9fa5-81570621b5bd",
+			"name": "input1",
+			"type": "double[180]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "44eef244-b9dc-4e7e-8d16-7471af19c3a3",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "2dea93fc-6dc4-472a-861a-7364b7ed2efa",
+		"senderPortId": "0976cd56-a55a-4453-9f64-ea2238f56931",
+		"receiverPortId": "8bb94253-21da-4d26-846e-a5f95c22c3ae",
+		"startNode": "Particles_Initializer",
+		"startPort": "output1",
+		"endNode": "Input_Selector",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "c57b91f5-47b1-48f8-a9e4-47ac9fb527c1",
+		"senderPortId": "68d2bc77-75ba-47a1-911c-9b190e1ae473",
+		"receiverPortId": "1bf96382-2811-4435-8ab8-178a933c1abb",
+		"startNode": "Input_Selector",
+		"startPort": "output1",
+		"endNode": "Update_Motion",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "740782d7-e3da-464b-b12a-f4691028107a",
+		"senderPortId": "be35590b-1eec-4c44-bfeb-9cd63f1da934",
+		"receiverPortId": "f938cea9-372c-4ca8-b490-3003d5ac1505",
+		"startNode": "Odometer",
+		"startPort": "output1",
+		"endNode": "Update_Motion",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "9ae3ec54-bfad-49fd-9bea-883acf235b1d",
+		"senderPortId": "44eef244-b9dc-4e7e-8d16-7471af19c3a3",
+		"receiverPortId": "a6d915b2-56e4-447a-b8ba-d79774fe813b",
+		"startNode": "Update_Sensor",
+		"startPort": "output1",
+		"endNode": "Resample",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "7e3e24fd-c9a8-4f44-a7d1-73d994a7eb07",
+		"senderPortId": "64eed3c2-601b-4ba1-bd83-a81401fae8c0",
+		"receiverPortId": "6feda2a4-ecf2-4d95-8bac-1341e0afcecb",
+		"startNode": "Resample",
+		"startPort": "output1",
+		"endNode": "Input_Selector",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "-69.0"
+	},
+	{
+		"id": "8aeb3fd9-48f3-4501-bb24-5cce126e6a44",
+		"senderPortId": "0faeb38b-d7a2-41bd-9b1b-8171ddaf05c6",
+		"receiverPortId": "0cda493e-4fe6-4cb9-8d72-ca1d23efd862",
+		"startNode": "Update_Motion",
+		"startPort": "output1",
+		"endNode": "Update_Sensor",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "218b2cf9-e0a4-469a-9ff0-4b1f5edbe626",
+		"senderPortId": "bd975717-1117-43f7-a9ec-298b4c8788f7",
+		"receiverPortId": "d14adc8e-c4c3-4052-9fa5-81570621b5bd",
+		"startNode": "Laser_Rangefinder",
+		"startPort": "output1",
+		"endNode": "Update_Sensor",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	}
+	],
+
+	"simLength": 100
+}

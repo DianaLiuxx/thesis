@@ -1,0 +1,69 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "929b3804-555c-4062-863d-46ce4d8428b2",
+		"name": "Node_1",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "Node_1.java",
+		"y": 340,
+		"x": 210,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "5438f417-ee3d-4bf1-9cb3-2455ea9858c3",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "96effbac-cd3b-49e6-b192-4aec36b3a9ce",
+		"name": "A_Star_2D",
+		"period": 10,
+		"deadline": 10,
+		"isDisplayNode": false,
+		"file": "A_Star_2D.java",
+		"y": 481,
+		"x": 209,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "248cc362-dc6d-49be-92b7-bee4ea2011f7",
+			"name": "input1",
+			"type": "double[<=3]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "616dbc9d-ecf5-4bfa-977c-295df3bc270f",
+		"senderPortId": "5438f417-ee3d-4bf1-9cb3-2455ea9858c3",
+		"receiverPortId": "248cc362-dc6d-49be-92b7-bee4ea2011f7",
+		"startNode": "Node_1",
+		"startPort": "output1",
+		"endNode": "A_Star_2D",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	}
+	],
+
+	"simLength": 10
+}

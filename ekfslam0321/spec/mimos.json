@@ -1,0 +1,291 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "96e360b4-508a-4bcf-881b-ba1f2edb1571",
+		"name": "Predict",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Predict.java",
+		"y": 324,
+		"x": 204,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "3c9233be-9050-45e8-918d-a8af344d586a",
+			"name": "input2",
+			"type": "double[225]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "e9350a00-13b9-4319-8432-710cfa75687d",
+			"name": "input1",
+			"type": "double[15]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "cecb2392-8c8f-44c8-97e4-c114fce01f36",
+			"name": "input3",
+			"type": "double[2]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "2cfb230b-cd08-4e75-b81e-1b21972b34bb",
+			"name": "output1",
+			"type": "double[]"
+		},
+		{
+			"id": "54207a7f-4c73-4df6-a9cf-6b9da429f3e9",
+			"name": "output2",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "c48d1a2a-ff06-4e3e-b474-a98732d0626b",
+		"name": "Update",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Update.java",
+		"y": 453,
+		"x": 203,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "e23c47a7-d6e2-429d-a847-0ebbd68aa8e9",
+			"name": "input2",
+			"type": "double[15]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "8c2de6b5-cb30-4bee-b70b-8bf77a2306a5",
+			"name": "input1",
+			"type": "double[225]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "760fea1e-59fa-4e1e-a7f4-36e5a23af852",
+			"name": "input3",
+			"type": "double[12]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "da16bb43-b1bb-485e-8519-46d63291f1f7",
+			"name": "output2",
+			"type": "double[]"
+		},
+		{
+			"id": "32069587-73d8-4b2d-83e4-efe1d9edbd83",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "23f75f89-de55-43fc-90a4-14a9efb072fe",
+		"name": "Control_Inputs",
+		"period": 5,
+		"deadline": 5,
+		"isDisplayNode": false,
+		"file": "Control_Inputs.java",
+		"y": 229,
+		"x": 281,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "6b6079fe-3a16-4b5d-aa9d-d6261fb68f86",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "7dec57ee-3ca7-450b-85da-1b94d3ad16d1",
+		"name": "Measurements",
+		"period": 6,
+		"deadline": 6,
+		"isDisplayNode": false,
+		"file": "Measurements.java",
+		"y": 358,
+		"x": 282,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "ef07eccc-922f-4323-b895-a85d19061d33",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "69482b22-2c5b-4ee2-9e65-de7394d58151",
+		"name": "State",
+		"period": 3,
+		"deadline": 3,
+		"isDisplayNode": false,
+		"file": "State.java",
+		"y": 192,
+		"x": 205,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "9a7dc430-80e6-40f8-ab23-031a08886f70",
+			"name": "input2",
+			"type": "double[<=225]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "dae23362-f10f-49a8-b6e5-fecfafcd25d7",
+			"name": "input1",
+			"type": "double[<=15]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "f4238832-701e-46e5-9c12-e8cedf7b7c7d",
+			"name": "output2",
+			"type": "double[]"
+		},
+		{
+			"id": "97fbb253-683f-467b-92ef-2a99ec78e38c",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "165824d9-b030-4a52-b3ce-7e0fe89a9874",
+		"senderPortId": "2cfb230b-cd08-4e75-b81e-1b21972b34bb",
+		"receiverPortId": "e23c47a7-d6e2-429d-a847-0ebbd68aa8e9",
+		"startNode": "Predict",
+		"startPort": "output1",
+		"endNode": "Update",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "062a0884-3d84-4e08-b062-b1c224d28cbe",
+		"senderPortId": "32069587-73d8-4b2d-83e4-efe1d9edbd83",
+		"receiverPortId": "dae23362-f10f-49a8-b6e5-fecfafcd25d7",
+		"startNode": "Update",
+		"startPort": "output1",
+		"endNode": "State",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "124.0"
+	},
+	{
+		"id": "13340780-3eb2-40b7-9f18-e1ccfa92d318",
+		"senderPortId": "6b6079fe-3a16-4b5d-aa9d-d6261fb68f86",
+		"receiverPortId": "cecb2392-8c8f-44c8-97e4-c114fce01f36",
+		"startNode": "Control_Inputs",
+		"startPort": "output1",
+		"endNode": "Predict",
+		"endPort": "input3",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "f46c471e-9b3e-4368-8b56-788ead40cd4a",
+		"senderPortId": "54207a7f-4c73-4df6-a9cf-6b9da429f3e9",
+		"receiverPortId": "8c2de6b5-cb30-4bee-b70b-8bf77a2306a5",
+		"startNode": "Predict",
+		"startPort": "output2",
+		"endNode": "Update",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "11d07ffe-19df-4d6e-9a25-0444d4ca96d4",
+		"senderPortId": "ef07eccc-922f-4323-b895-a85d19061d33",
+		"receiverPortId": "760fea1e-59fa-4e1e-a7f4-36e5a23af852",
+		"startNode": "Measurements",
+		"startPort": "output1",
+		"endNode": "Update",
+		"endPort": "input3",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "72ea884e-1500-4779-8868-82106c215658",
+		"senderPortId": "f4238832-701e-46e5-9c12-e8cedf7b7c7d",
+		"receiverPortId": "3c9233be-9050-45e8-918d-a8af344d586a",
+		"startNode": "State",
+		"startPort": "output2",
+		"endNode": "Predict",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "340372ee-2d00-40d0-8f28-ef11c91d43a9",
+		"senderPortId": "97fbb253-683f-467b-92ef-2a99ec78e38c",
+		"receiverPortId": "e9350a00-13b9-4319-8432-710cfa75687d",
+		"startNode": "State",
+		"startPort": "output1",
+		"endNode": "Predict",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "0ded1485-bbca-432a-8795-ed3df9d15bac",
+		"senderPortId": "da16bb43-b1bb-485e-8519-46d63291f1f7",
+		"receiverPortId": "9a7dc430-80e6-40f8-ab23-031a08886f70",
+		"startNode": "Update",
+		"startPort": "output2",
+		"endNode": "State",
+		"endPort": "input2",
+		"line1Width": "19.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "-57.0"
+	}
+	],
+
+	"simLength": 175
+}
