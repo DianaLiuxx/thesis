@@ -1,0 +1,295 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "39b2df91-9076-4a9d-93f1-97d73bea9329",
+		"name": "Weights",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Weights.java",
+		"y": 291,
+		"x": 154,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "4f349139-e7fc-4528-98d6-48dc08bb4259",
+			"name": "output1",
+			"type": "double[]"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "a6318334-40a4-4068-9fa6-550a1034fb7b",
+		"name": "Controller",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Controller.java",
+		"y": 364,
+		"x": 258,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "b2499f03-dfdd-4d3a-b789-1198bbcbd9f4",
+			"name": "input2",
+			"type": "double[15]",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "156d8d62-8037-4a76-a432-0283d6fdc4d4",
+			"name": "input1",
+			"type": "double",
+			"initialValue": "0.0",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "61b984a0-f948-458e-ae1f-fd78508d96f4",
+			"name": "output2",
+			"type": "double"
+		},
+		{
+			"id": "24dc9721-8823-4625-94b2-efc524a72f02",
+			"name": "output3",
+			"type": "double"
+		},
+		{
+			"id": "9060677f-6131-44a5-b05a-ca568386f8dd",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "a0b5eed0-8f4c-4c1a-840d-af0125566d92",
+		"name": "Robot",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Robot.java",
+		"y": 261,
+		"x": 259,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "295e66f1-9ff2-4e5c-ae70-51e37b030504",
+			"name": "input1",
+			"type": "double",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "10e5c9a2-9370-47ea-a828-c1b729b870b0",
+			"name": "input2",
+			"type": "double",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		{
+			"id": "bb378e47-c42d-4817-ab13-2caefb3a121c",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "1499b8b7-da44-46f6-8a21-656d9c1defec",
+		"name": "Noise",
+		"period": 1,
+		"deadline": 1,
+		"isDisplayNode": false,
+		"file": "Noise.java",
+		"y": 166,
+		"x": 203,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "a3db6b2f-7375-443e-9f0f-efa23e24d409",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "73cb116f-99f3-4621-8578-45f03e8ab5e6",
+		"name": "Position(m)",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 388,
+		"x": 394,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "614cbc36-6d82-41fc-9486-87d5498cf412",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "0082a21b-9d59-4ec4-9337-b552f992e9cc",
+		"name": "Velocity",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 488,
+		"x": 187,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "d961bd28-5be0-4b9b-8427-6d42669810e7",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "feb8954a-77d9-4eda-9363-87afd5b74aad",
+		"name": "Acceleration",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 489,
+		"x": 258,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "16d9e37d-e6fb-43c7-b5d6-b84445ef8c9f",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "eaf91540-50dd-4149-a80e-de71debf0a76",
+		"senderPortId": "4f349139-e7fc-4528-98d6-48dc08bb4259",
+		"receiverPortId": "b2499f03-dfdd-4d3a-b789-1198bbcbd9f4",
+		"startNode": "Weights",
+		"startPort": "output1",
+		"endNode": "Controller",
+		"endPort": "input2",
+		"line1Width": "7.0",
+		"line5Width": "11.0",
+		"line3TranslateY": "-10.0"
+	},
+	{
+		"id": "4b467f4d-e7d6-42a0-964e-f018ac9686d9",
+		"senderPortId": "bb378e47-c42d-4817-ab13-2caefb3a121c",
+		"receiverPortId": "156d8d62-8037-4a76-a432-0283d6fdc4d4",
+		"startNode": "Robot",
+		"startPort": "output1",
+		"endNode": "Controller",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "28.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "2f95f8c6-91d8-4e23-8cbc-c4186c82cf0f",
+		"senderPortId": "9060677f-6131-44a5-b05a-ca568386f8dd",
+		"receiverPortId": "10e5c9a2-9370-47ea-a828-c1b729b870b0",
+		"startNode": "Controller",
+		"startPort": "output1",
+		"endNode": "Robot",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "63.0"
+	},
+	{
+		"id": "eefdd4c5-43c9-44bb-a46a-2b06d6b2a6ee",
+		"senderPortId": "a3db6b2f-7375-443e-9f0f-efa23e24d409",
+		"receiverPortId": "295e66f1-9ff2-4e5c-ae70-51e37b030504",
+		"startNode": "Noise",
+		"startPort": "output1",
+		"endNode": "Robot",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "cb1f7848-6f0f-4aea-a9dc-81884a87f774",
+		"senderPortId": "9060677f-6131-44a5-b05a-ca568386f8dd",
+		"receiverPortId": "614cbc36-6d82-41fc-9486-87d5498cf412",
+		"startNode": "Controller",
+		"startPort": "output1",
+		"endNode": "Position(m)",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "52.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "10f44865-aff1-4b08-932c-7ebf26c1d382",
+		"senderPortId": "61b984a0-f948-458e-ae1f-fd78508d96f4",
+		"receiverPortId": "d961bd28-5be0-4b9b-8427-6d42669810e7",
+		"startNode": "Controller",
+		"startPort": "output2",
+		"endNode": "Velocity",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "-29.0"
+	},
+	{
+		"id": "11218abe-be02-45f5-8efd-ed87e24fa026",
+		"senderPortId": "24dc9721-8823-4625-94b2-efc524a72f02",
+		"receiverPortId": "16d9e37d-e6fb-43c7-b5d6-b84445ef8c9f",
+		"startNode": "Controller",
+		"startPort": "output3",
+		"endNode": "Acceleration",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	}
+	],
+
+	"simLength": 5000
+}
