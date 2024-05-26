@@ -1,0 +1,224 @@
+{
+	"name": "",
+	"nodes": [
+	{
+		"id": "fb22c10f-0a9c-4ee9-a87f-6315efbd6767",
+		"name": "Num_1",
+		"period": 20,
+		"deadline": 20,
+		"isDisplayNode": false,
+		"file": "Num_1.java",
+		"y": 266,
+		"x": 137,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "5dad8903-aae4-4738-9ce4-6208b72d846b",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "f981be83-0448-4755-9b2a-484a7b0cc9ca",
+		"name": "Num_2",
+		"period": 2,
+		"deadline": 2,
+		"isDisplayNode": false,
+		"file": "Num_2.java",
+		"y": 290,
+		"x": 332,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		],
+		"outputs": [
+		{
+			"id": "7c4e716f-756d-421d-aaed-f329a6973968",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "442d5d7a-d1fc-4b10-b6c4-2ff7b90b6a3e",
+		"name": "Sum",
+		"period": 2,
+		"deadline": 2,
+		"isDisplayNode": false,
+		"file": "Sum.java",
+		"y": 537,
+		"x": 238,
+		"width": 50,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "63508175-8a0f-4fa4-84e1-5bf023ceeef2",
+			"name": "input2",
+			"type": "double",
+			"initialValue": "",
+			"aggregator": "FIFO"
+		},
+		{
+			"id": "a60154ae-544f-4dd7-8c6b-8eee1dfbd113",
+			"name": "input1",
+			"type": "double",
+			"initialValue": "",
+			"aggregator": "REGISTER"
+		}
+		],
+		"outputs": [
+		{
+			"id": "ee1712ef-ee18-4adb-8e05-64af25cd230c",
+			"name": "output1",
+			"type": "double"
+		}
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "eb3fc3f2-3e7c-4070-a9ac-4e0634b5d260",
+		"name": "Sum_M",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 698,
+		"x": 217,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "010612d3-3f71-41d5-8431-e95f96c5f35e",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "e973f579-40d5-414d-aa21-9b3b7a5c5aa8",
+		"name": "Num_1_M",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 466,
+		"x": 83,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "d4a6ef9b-38d7-4d8e-8030-f9b7c273f0d7",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	},
+	{
+		"id": "8bbea70f-6b65-4426-876d-5a4015329601",
+		"name": "Num_2_M",
+		"period": 20,
+		"deadline": 10,
+		"isDisplayNode": true,
+		"y": 455,
+		"x": 446,
+		"width": 40,
+		"height": 50,
+		"inputs": [
+		{
+			"id": "59babd7a-b16f-4754-879e-d674a19daffa",
+			"name": "input1",
+			"type": "int",
+			"initialValue": "null",
+			"aggregator": "FIFO"
+		}
+		],
+		"outputs": [
+		],
+		"predicates": [
+		]
+	}
+	],
+	"links": [
+	{
+		"id": "c54fc326-81f7-46a3-ab82-a8446130212d",
+		"senderPortId": "5dad8903-aae4-4738-9ce4-6208b72d846b",
+		"receiverPortId": "a60154ae-544f-4dd7-8c6b-8eee1dfbd113",
+		"startNode": "Num_1",
+		"startPort": "output1",
+		"endNode": "Sum",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "8c8a469a-d734-4593-8655-a8d8a35cd51c",
+		"senderPortId": "7c4e716f-756d-421d-aaed-f329a6973968",
+		"receiverPortId": "63508175-8a0f-4fa4-84e1-5bf023ceeef2",
+		"startNode": "Num_2",
+		"startPort": "output1",
+		"endNode": "Sum",
+		"endPort": "input2",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "8326c010-c2a1-41ec-bc58-dd698fc46202",
+		"senderPortId": "ee1712ef-ee18-4adb-8e05-64af25cd230c",
+		"receiverPortId": "010612d3-3f71-41d5-8431-e95f96c5f35e",
+		"startNode": "Sum",
+		"startPort": "output1",
+		"endNode": "Sum_M",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "bf90de59-d41f-4030-bdf6-4104217bd439",
+		"senderPortId": "5dad8903-aae4-4738-9ce4-6208b72d846b",
+		"receiverPortId": "d4a6ef9b-38d7-4d8e-8030-f9b7c273f0d7",
+		"startNode": "Num_1",
+		"startPort": "output1",
+		"endNode": "Num_1_M",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	},
+	{
+		"id": "a75998a2-7c8f-4c66-89e7-c4f90a39917e",
+		"senderPortId": "7c4e716f-756d-421d-aaed-f329a6973968",
+		"receiverPortId": "59babd7a-b16f-4754-879e-d674a19daffa",
+		"startNode": "Num_2",
+		"startPort": "output1",
+		"endNode": "Num_2_M",
+		"endPort": "input1",
+		"line1Width": "20.0",
+		"line5Width": "20.0",
+		"line3TranslateY": "0.0"
+	}
+	],
+
+	"simLength": 40
+}

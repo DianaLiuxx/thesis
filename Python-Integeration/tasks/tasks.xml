@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><taskSet><task name="Num_1Tasks" priority="1" deadline="20"><subtask x="50.0" y="50.0" id="767478da-4fb1-4bbe-b40b-61d09acb46d9"><name>T1</name><WCET>10</WCET></subtask>
+</task><task name="Num_2Tasks" priority="1" deadline="20"><subtask x="50.0" y="50.0" id="d0129c15-be59-412e-9804-6d200bd55ead"><name>T1</name><WCET>10</WCET></subtask>
+</task><task name="SumTasks" priority="1" deadline="20"><subtask x="50.0" y="50.0" id="43cb50d7-c1b4-49de-aaec-fd310e9641f9"><name>T1</name><WCET>10</WCET></subtask>
+</task></taskSet>
