@@ -139,8 +139,8 @@
 		"deadline": 1,
 		"isDisplayNode": false,
 		"file": "Display.java",
-		"y": 396,
-		"x": 203,
+		"y": 417,
+		"x": 208,
 		"width": 50,
 		"height": 50,
 		"inputs": [
@@ -164,12 +164,12 @@
 	},
 	{
 		"id": "ee46d2c5-85e3-432d-af22-43ecfe57f81f",
-		"name": "Node_1",
+		"name": "Reward",
 		"period": 20,
 		"deadline": 10,
 		"isDisplayNode": true,
-		"y": 520,
-		"x": 215,
+		"y": 514,
+		"x": 208,
 		"width": 40,
 		"height": 50,
 		"inputs": [
@@ -233,7 +233,7 @@
 		"endNode": "Sample",
 		"endPort": "input2",
 		"line1Width": "20.0",
-		"line5Width": "20.0",
+		"line5Width": "55.0",
 		"line3TranslateY": "-56.0"
 	},
 	{
@@ -278,7 +278,7 @@
 		"receiverPortId": "5e886b62-7fe6-49b3-8b2d-a3509cce84d4",
 		"startNode": "Display",
 		"startPort": "output1",
-		"endNode": "Node_1",
+		"endNode": "Reward",
 		"endPort": "input1",
 		"line1Width": "20.0",
 		"line5Width": "20.0",
